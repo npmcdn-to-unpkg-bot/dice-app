@@ -1,0 +1,13 @@
+{
+  "name": "dice_app",
+  "version": "1.0.0",
+  "description": "Dice app for fun",
+  "author": "Gediminas Lisauskas <glisauskas@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
