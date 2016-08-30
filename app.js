@@ -25,17 +25,17 @@ function setEventHandlers() {
 }
 
 function onSocketConnection(socket) {
-    onPlayerConnect(socket);
-    socket.on("disconnect", onPlayerDisconnect);
+    onSocketConnect(socket);
+    socket.on("disconnect", onSocketDisconnect);
 }
 
-function onPlayerConnect(socket) {
+function onSocketConnect(socket) {
     console.log('Player connected: ' + socket.id);
     socket_list.push(socket);
     listConnectedSockets();
 }
 
-function onPlayerDisconnect() {
+function onSocketDisconnect() {
     console.log('Player disconected' + this.id);
     socket_list.splice(socket_list.indexOf(this), 1);
     listConnectedSockets();
