@@ -1,7 +1,7 @@
 {
   "name": "dice_app",
   "version": "1.0.0",
-  "description": "A Dice App for Two",
+  "description": "A Game of Dice",
   "author": "Gediminas Lisauskas <glisauskas@gmail.com>",
   "main": "server.js",
   "scripts": {
