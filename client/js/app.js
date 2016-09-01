@@ -14,7 +14,7 @@ function setEventHandlers() {
 function onSocketConnected() {
     console.log("Connected to socket server");
     socket.emit("new player", {});
-};
+}
 
 function onSetNumberOfDices() {
     // Todo: show some dialog for picking number of dices 1 - 4. React and redux stuff here
@@ -25,3 +25,5 @@ function onSetNumberOfDices() {
 function onNumberOfDices(data) {
     console.log('number of dices from server: ' + data.number);
 }
+
+init();

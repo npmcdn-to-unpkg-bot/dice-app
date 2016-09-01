@@ -6,6 +6,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script> <!--Todo: use local resource here -->
     <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script> <!--Todo: use local resource here -->
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
 </head>
 <body>
 <div id="game-info">
@@ -13,9 +14,6 @@
     <h3>Current dice count: <span id="dice-count"></span></h3>
     <h3>Current player count: <span id="player-count"></span></h3>
 </div>
-    <script src="/client/js/app.js"></script>
-    <script>
-        init();
-    </script>
+    <script type="text/babel" src="/client/js/app.js"></script>
 </body>
 </html>
