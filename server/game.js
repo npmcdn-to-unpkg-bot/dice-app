@@ -1,6 +1,6 @@
 var Game = function(){
     this.numberOfDices = 0;
-    this.state = 'paused';
+    this.players = [];
 };
 
 Game.prototype.rollOneDice = function() {
