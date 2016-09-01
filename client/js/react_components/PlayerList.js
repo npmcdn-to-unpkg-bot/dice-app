@@ -19,9 +19,9 @@ var PlayerRow = React.createClass({
         return (
             <li>
                 <div>
-                    <span class="player-name">{this.props.id}</span>
-                    <span class="player-id">{this.props.name}</span>
-                    <span class="player-last-roll-sum">{this.props.lastRollSum}</span>
+                    <span className="player-name">{this.props.id}</span>
+                    <span className="player-id">{this.props.name}</span>
+                    <span className="player-last-roll-sum">{this.props.lastRollSum}</span>
                 </div>
             </li>
         )

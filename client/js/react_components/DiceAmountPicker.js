@@ -12,13 +12,13 @@ var DiceAmountPicker = React.createClass({
 
 var DicePickRow = React.createClass({
     render: function() {
-        var rows = [];
-        for (var i = 0; i < 4; i++) { //static for now
-            rows.push(<li>i</li>);
-        }
+        var diceNumbers = [1, 2, 3, 4];
+        diceNumbers.map(function(number){
+           return <li>{number}</li>
+        });
         return (
             <ul>
-                {rows}
+                {diceNumbers}
             </ul>
         )
     }
